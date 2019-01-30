@@ -1,0 +1,20 @@
+.signup-wrapper {
+    background: url(../../../assets/images/login.jpg) no-repeat center;
+    margin-top: 36px;
+}
+
+.signup-wrapper h1 {
+    color: white;
+}
+.signup-wrapper .form-group {
+    color: white;
+}
+.btn-login {    
+    background: #6351ce;
+    color: white;
+}
+.btn-register {
+    margin-right: 8px;
+    background: #6351ce;
+    color: white;
+}

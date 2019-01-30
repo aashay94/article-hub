@@ -1,0 +1,23 @@
+<form class="form" name="addArticleForm">
+  <h2 style="text-align: center;">Edit Article</h2>
+  <div class="form-group container-fluid">
+    <mat-form-field class="example-container">
+      <input matInput placeholder="Title" value="" (keyup)="onKey($event)">
+    </mat-form-field>
+    <mat-form-field class="example-container">
+      <mat-select placeholder="Category" (selectionChange)="categoryValue($event)">
+        <mat-option *ngFor="let category of categories" [value]="category.viewValue">
+          {{category.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="img-upload">
+      <mat-label>Upload Article Image</mat-label>
+      <input type="file" [style]="" ng2FileSelect [uploader]="uploader" (onFileSelected)="onUploadStateChanged($event)"/>
+    </div>
+    <div class="editor">
+      <quill-editor [style]="{height: '200px'}" (onContentChanged)="bodyContent($event)"></quill-editor>
+    </div>
+    <button mat-button class="btn btn-lg btn-primary" (click)="onPublish($event)">Publish</button>
+  </div>
+</form>

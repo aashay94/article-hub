@@ -1,0 +1,35 @@
+.navbar .navbar-default .navbar-static-top {
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #6351ce;
+}
+.navbar a {
+    color: white;
+}
+.navbar .active>a {
+   background:  rgba(0,0,0,.1);
+}
+
+.navbar .active>a:visited {
+    color: white;
+}
+.navbar-text {
+    color: white;
+    margin: 0;
+}
+.dropdown-item {
+    color: white;
+    display: block;
+    padding: 2px;
+    text-align: center;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    background: #6351ce;
+    z-index: 1;
+}

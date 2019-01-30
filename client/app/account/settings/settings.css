@@ -1,0 +1,14 @@
+.settings-wrapper {
+    margin-top: 105px;
+    padding-bottom: 20px;
+    margin-bottom: 105px;
+}
+
+.settings-wrapper h1 {
+    font-weight: 600; 
+}
+
+.settings-wrapper .btn-primary {
+    background: #6351ce;
+    color: white;
+}
